@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>UsingFieldMatcher</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            dexkit-android
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dexkit-android:dokkaHtml/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="dexkit-android::org.luckypray.dexkit.query.matchers/UsingFieldMatcher///PointingToDeclaration//-360996621">
+  <div class="breadcrumbs"><a href="../../../index.html">dexkit-android</a><span class="delimiter">/</span><a href="../index.html">org.luckypray.dexkit.query.matchers</a><span class="delimiter">/</span><span class="current">UsingFieldMatcher</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Using</span><wbr></wbr><span>Field</span><wbr></wbr><span><span>Matcher</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">UsingFieldMatcher</a> : <a href="../../org.luckypray.dexkit.query.base/-base-query/index.html">BaseQuery</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1338048632%2FConstructors%2F-360996621" anchor-label="UsingFieldMatcher" id="1338048632%2FConstructors%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-using-field-matcher.html"><span>Using</span><wbr></wbr><span>Field</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1338048632%2FConstructors%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">field<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/reflect/Field.html">Field</a><span class="token punctuation">, </span></span><span class="parameter ">usingType<span class="token operator">: </span><a href="../../org.luckypray.dexkit.query.enums/-using-type/index.html">UsingType</a><span class="token operator"> = </span>UsingType.Any</span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fieldDescriptor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">usingType<span class="token operator">: </span><a href="../../org.luckypray.dexkit.query.enums/-using-type/index.html">UsingType</a><span class="token operator"> = </span>UsingType.Any</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="2067425862%2FClasslikes%2F-360996621" anchor-label="Companion" id="2067425862%2FClasslikes%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2067425862%2FClasslikes%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="485681249%2FProperties%2F-360996621" anchor-label="declaredClass" id="485681249%2FProperties%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="declared-class.html"><span>declared</span><wbr></wbr><span><span>Class</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="485681249%2FProperties%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="declared-class.html">declaredClass</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph"><p class="paragraph">The field declared class fully qualified name.</p> ----------------</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-544608724%2FProperties%2F-360996621" anchor-label="descriptor" id="-544608724%2FProperties%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="descriptor.html"><span><span>descriptor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-544608724%2FProperties%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="descriptor.html">descriptor</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph"><p class="paragraph">The field descriptor.</p> ----------------</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1871850355%2FProperties%2F-360996621" anchor-label="matcher" id="-1871850355%2FProperties%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="matcher.html"><span><span>matcher</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1871850355%2FProperties%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="matcher.html">matcher</a><span class="token operator">: </span><a href="../-field-matcher/index.html">FieldMatcher</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-471563261%2FProperties%2F-360996621" anchor-label="modifiers" id="-471563261%2FProperties%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="modifiers.html"><span><span>modifiers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-471563261%2FProperties%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="modifiers.html">modifiers</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Field modifiers. Match using <a href="https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier.html">java.lang.reflect.Modifier</a> mask bits, default match type is contains, if you need to match exactly, please use <a href="modifiers.html">modifiers</a> overloaded function.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1086575888%2FProperties%2F-360996621" anchor-label="name" id="1086575888%2FProperties%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="name.html"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1086575888%2FProperties%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="name.html">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph"><p class="paragraph">The field name.</p> ----------------</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2016351041%2FProperties%2F-360996621" anchor-label="type" id="2016351041%2FProperties%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="type.html"><span><span>type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2016351041%2FProperties%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="type.html">type</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph"><p class="paragraph">The field type fully qualified name.</p> ----------------</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1230139167%2FProperties%2F-360996621" anchor-label="usingType" id="-1230139167%2FProperties%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="using-type.html"><span>using</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1230139167%2FProperties%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="using-type.html">usingType</a><span class="token operator">: </span><a href="../../org.luckypray.dexkit.query.enums/-using-type/index.html">UsingType</a></div><div class="brief "><p class="paragraph">Using type. Default is <a href="../../org.luckypray.dexkit.query.enums/-using-type/-any/index.html">UsingType.Any</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-448986999%2FFunctions%2F-360996621" anchor-label="addAnnotation" id="-448986999%2FFunctions%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-annotation.html"><span>add</span><wbr></wbr><span><span>Annotation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-448986999%2FFunctions%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="add-annotation.html"><span class="token function">addAnnotation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../-annotation-matcher/index.html">AnnotationMatcher</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><br><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-annotation.html"><span class="token function">addAnnotation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">annotation<span class="token operator">: </span><a href="../-annotation-matcher/index.html">AnnotationMatcher</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">Add field annotation matcher.</p> ----------------</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-717621655%2FFunctions%2F-360996621" anchor-label="addReadMethods" id="-717621655%2FFunctions%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-read-methods.html"><span>add</span><wbr></wbr><span>Read</span><wbr></wbr><span><span>Methods</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-717621655%2FFunctions%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="add-read-methods.html"><span class="token function">addReadMethods</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../-method-matcher/index.html">MethodMatcher</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><br><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-read-methods.html"><span class="token function">addReadMethods</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">methodDescriptor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">Read this field value's methods matcher.</p> ----------------</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-read-methods.html"><span class="token function">addReadMethods</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">readMethod<span class="token operator">: </span><a href="../-method-matcher/index.html">MethodMatcher</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">Add read this field value's method matcher.</p> ----------------</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1379133845%2FFunctions%2F-360996621" anchor-label="addWriteMethod" id="1379133845%2FFunctions%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-write-method.html"><span>add</span><wbr></wbr><span>Write</span><wbr></wbr><span><span>Method</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1379133845%2FFunctions%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="add-write-method.html"><span class="token function">addWriteMethod</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../-method-matcher/index.html">MethodMatcher</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><br><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-write-method.html"><span class="token function">addWriteMethod</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">methodDescriptor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">Write this field value's methods matcher.</p> ----------------</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-write-method.html"><span class="token function">addWriteMethod</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">putMethod<span class="token operator">: </span><a href="../-method-matcher/index.html">MethodMatcher</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">Add write this field value's method matcher.</p> ----------------</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-669423545%2FFunctions%2F-360996621" anchor-label="annotationCount" id="-669423545%2FFunctions%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="annotation-count.html"><span>annotation</span><wbr></wbr><span><span>Count</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-669423545%2FFunctions%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="annotation-count.html"><span class="token function">annotationCount</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">count<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">Field annotation count.</p> ----------------</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="annotation-count.html"><span class="token function">annotationCount</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">range<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.ranges/-int-range/index.html">IntRange</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="annotation-count.html"><span class="token function">annotationCount</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">range<span class="token operator">: </span><a href="../../org.luckypray.dexkit.query.matchers.base/-int-range/index.html">IntRange</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="annotation-count.html"><span class="token function">annotationCount</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">min<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">max<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>Int.MAX_VALUE</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">Field annotation count range.</p> ----------------</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-830907135%2FFunctions%2F-360996621" anchor-label="annotations" id="-830907135%2FFunctions%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="annotations.html"><span><span>annotations</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-830907135%2FFunctions%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="annotations.html"><span class="token function">annotations</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../-annotations-matcher/index.html">AnnotationsMatcher</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><br><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="annotations.html"><span class="token function">annotations</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">annotations<span class="token operator">: </span><a href="../-annotations-matcher/index.html">AnnotationsMatcher</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">The field annotations matcher.</p> ----------------</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="909991721%2FFunctions%2F-360996621" anchor-label="declaredClass" id="909991721%2FFunctions%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="declared-class.html"><span>declared</span><wbr></wbr><span><span>Class</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="909991721%2FFunctions%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="declared-class.html"><span class="token function">declaredClass</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clazz<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="declared-class.html"><span class="token function">declaredClass</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">declaredClass<span class="token operator">: </span><a href="../-class-matcher/index.html">ClassMatcher</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">The field declared class matcher.</p> ----------------</p></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="declared-class.html"><span class="token function">declaredClass</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../-class-matcher/index.html">ClassMatcher</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><br><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="declared-class.html"><span class="token function">declaredClass</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">className<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">matchType<span class="token operator">: </span><a href="../../org.luckypray.dexkit.query.enums/-string-match-type/index.html">StringMatchType</a><span class="token operator"> = </span>StringMatchType.Equals<span class="token punctuation">, </span></span><span class="parameter ">ignoreCase<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">The field declared class name matcher.</p> ----------------</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="29592152%2FFunctions%2F-360996621" anchor-label="descriptor" id="29592152%2FFunctions%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="descriptor.html"><span><span>descriptor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="29592152%2FFunctions%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="descriptor.html"><span class="token function">descriptor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">descriptor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">The field descriptor, specifies a unique field.</p> ----------------</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-559745451%2FFunctions%2F-360996621" anchor-label="field" id="-559745451%2FFunctions%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="field.html"><span><span>field</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-559745451%2FFunctions%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="field.html"><span class="token function">field</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../-field-matcher/index.html">FieldMatcher</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><br><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="field.html"><span class="token function">field</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">matcher<span class="token operator">: </span><a href="../-field-matcher/index.html">FieldMatcher</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">Need to match field.</p> ----------------</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-144863085%2FFunctions%2F-360996621" anchor-label="modifiers" id="-144863085%2FFunctions%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="modifiers.html"><span><span>modifiers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-144863085%2FFunctions%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="modifiers.html"><span class="token function">modifiers</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">modifiers<span class="token operator">: </span><a href="../../org.luckypray.dexkit.query.matchers.base/-access-flags-matcher/index.html">AccessFlagsMatcher</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">Field modifiers matcher.</p> ----------------</p></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="modifiers.html"><span class="token function">modifiers</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">modifiers<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">matchType<span class="token operator">: </span><a href="../../org.luckypray.dexkit.query.enums/-match-type/index.html">MatchType</a><span class="token operator"> = </span>MatchType.Contains</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">Field modifiers. Match using <a href="https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier.html">java.lang.reflect.Modifier</a> mask bits.</p> ----------------</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="411838782%2FFunctions%2F-360996621" anchor-label="name" id="411838782%2FFunctions%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="name.html"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="411838782%2FFunctions%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="name.html"><span class="token function">name</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="../../org.luckypray.dexkit.query.matchers.base/-string-matcher/index.html">StringMatcher</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">The field name string matcher</p> ----------------</p></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="name.html"><span class="token function">name</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">matchType<span class="token operator">: </span><a href="../../org.luckypray.dexkit.query.enums/-string-match-type/index.html">StringMatchType</a><span class="token operator"> = </span>StringMatchType.Equals<span class="token punctuation">, </span></span><span class="parameter ">ignoreCase<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">The field name.</p> ----------------</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2116730735%2FFunctions%2F-360996621" anchor-label="readMethods" id="-2116730735%2FFunctions%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-methods.html"><span>read</span><wbr></wbr><span><span>Methods</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2116730735%2FFunctions%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="read-methods.html"><span class="token function">readMethods</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../-methods-matcher/index.html">MethodsMatcher</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><br><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="read-methods.html"><span class="token function">readMethods</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">readMethods<span class="token operator">: </span><a href="../-methods-matcher/index.html">MethodsMatcher</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">Read this field value's methods matcher.</p> ----------------</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1421465377%2FFunctions%2F-360996621" anchor-label="type" id="1421465377%2FFunctions%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="type.html"><span><span>type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1421465377%2FFunctions%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="type.html"><span class="token function">type</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clazz<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">The field type class matcher.</p> ----------------</p></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="type.html"><span class="token function">type</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../-class-matcher/index.html">ClassMatcher</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><br><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="type.html"><span class="token function">type</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="../-class-matcher/index.html">ClassMatcher</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">The field type matcher.</p> ----------------</p></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="type.html"><span class="token function">type</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">typeName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">matchType<span class="token operator">: </span><a href="../../org.luckypray.dexkit.query.enums/-string-match-type/index.html">StringMatchType</a><span class="token operator"> = </span>StringMatchType.Equals<span class="token punctuation">, </span></span><span class="parameter ">ignoreCase<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">The field type name matcher.</p> ----------------</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1807091070%2FFunctions%2F-360996621" anchor-label="usingType" id="1807091070%2FFunctions%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="using-type.html"><span>using</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1807091070%2FFunctions%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="using-type.html"><span class="token function">usingType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">usingType<span class="token operator">: </span><a href="../../org.luckypray.dexkit.query.enums/-using-type/index.html">UsingType</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">Using type.</p> ----------------</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1073677255%2FFunctions%2F-360996621" anchor-label="writeMethods" id="-1073677255%2FFunctions%2F-360996621" data-filterable-set=":dexkit-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":dexkit-android:dokkaHtml/release" data-filterable-set=":dexkit-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="write-methods.html"><span>write</span><wbr></wbr><span><span>Methods</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1073677255%2FFunctions%2F-360996621"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dexkit-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="write-methods.html"><span class="token function">writeMethods</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../-methods-matcher/index.html">MethodsMatcher</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><br><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="write-methods.html"><span class="token function">writeMethods</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">putMethods<span class="token operator">: </span><a href="../-methods-matcher/index.html">MethodsMatcher</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">UsingFieldMatcher</a></div><div class="brief "><p class="paragraph"><p class="paragraph">Write this field value's methods matcher.</p> ----------------</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
